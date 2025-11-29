@@ -25,7 +25,7 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS asistencia (
                hora_salida TIME NULL,
                FOREIGN KEY (id_empleado) REFERENCES empleados(id_empleado))
                """)
-# Modificar tu tabla cortes para que guarde los días por empleado
+#tabla cortes para que guarde los días por empleado
 cursor.execute("""CREATE TABLE IF NOT EXISTS cortes (
                 id_corte INTEGER PRIMARY KEY AUTOINCREMENT,
                 id_empleado INTEGER,
